@@ -1,8 +1,6 @@
-# PXEBoot-Setup
+# PXE-Boot Server on Ubuntu 24.04 LTS  
 This is a Repo for steps on installing PXE Boot server on a linux based machine
 
----
-# PXE-Boot Server on Ubuntu 24.04 LTS  
 ---
 
 ## 0  What This Repo Contains
@@ -151,7 +149,7 @@ All three must succeed for a clean PXE boot.
 
 ---
 
-## 5  Important – The **VLAN / DHCP** Caveat 🚧
+## 5  Important – The **VLAN / DHCP** Caveat
 This README assumes **your PXE server is the only DHCP responder** on the subnet.  
 In real networks you should **either**:
 
@@ -181,6 +179,3 @@ Until you implement one of those, machines might receive an IP from the router�
 
 Happy net-booting!  
 Feel free to open an issue / PR when you add new distros.
-```
-
----
