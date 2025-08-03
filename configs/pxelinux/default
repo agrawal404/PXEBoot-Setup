@@ -1,0 +1,23 @@
+DEFAULT menu.c32
+PROMPT 0
+TIMEOUT 50
+ONTIMEOUT local
+MENU TITLE Network Boot @ 192.168.0.77
+
+LABEL ubuntu-24.04
+  MENU LABEL Ubuntu 24.04 Server (netboot)
+  KERNEL http://192.168.0.77/ubuntu/24.04/amd64/linux
+  INITRD http://192.168.0.77/ubuntu/24.04/amd64/initrd
+  APPEND ip=dhcp autoinstall ds=nocloud-net;s=http://192.168.0.77/ubuntu/24.04/meta/ --
+
+LABEL win11
+  MENU LABEL Windows 11 Installer (WinPE)
+  KERNEL http://192.168.0.77/winpe/wimboot
+  INITRD boot/bcd BCD
+  INITRD boot/boot.sdi boot.sdi
+  INITRD sources/boot.wim boot.wim
+  APPEND quiet --
+
+LABEL netbootxyz
+  MENU LABEL netboot.xyz (hundreds of distros)
+  KERNEL netbootxyz.kpxe

@@ -1,0 +1,10 @@
+# Large binaries fetched at deploy time
+/var/
+/tmp/
+/isos/
+/ubuntu/
+/debian/
+/win*/          # WIMs
+*.iso
+*.wim
+*.img
