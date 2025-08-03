@@ -2,11 +2,7 @@
 This is a Repo for steps on installing PXE Boot server on a linux based machine
 
 ---
-
-```markdown
 # PXE-Boot Server on Ubuntu 24.04 LTS  
-*Compute-friendly README*
-
 ---
 
 ## 0  What This Repo Contains
@@ -188,11 +184,3 @@ Feel free to open an issue / PR when you add new distros.
 ```
 
 ---
-
-### How to use this README
-
-1. **Copy** everything between the triple-backticks into a file called `README.md`.  
-2. Keep it in the same repo or directory as your `setup-pxe.sh`.  
-3. Update the URLs or IPs in the examples if your server address changes.
-
-You now have a self-contained guide plus the install script for future rebuilds—and a clear note that the deployment isn’t production-ready until PXE sits on its own VLAN (or you switch to proxy-DHCP).
